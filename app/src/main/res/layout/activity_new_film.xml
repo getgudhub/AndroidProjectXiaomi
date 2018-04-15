@@ -78,7 +78,7 @@
 
                     <EditText
                         android:id="@+id/etActors"
-                        android:hint=" ( įrašykite brūkšnelį, jeigu nėra )"
+                        android:hint=" ( įrašykite N - jeigu nėra )"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content" />
 
@@ -190,21 +190,21 @@
                                     android:text="Nebalsuoti"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="10dp"/>
+                                    android:layout_marginRight="5dp"/>
 
                                 <RadioButton
                                     android:id="@+id/rbBest"
                                     android:text="Puikus"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="10dp"/>
+                                    android:layout_marginRight="5dp"/>
 
                                 <RadioButton
                                     android:id="@+id/rbGood"
                                     android:text="Geras"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    android:layout_marginRight="10dp"/>
+                                    android:layout_marginRight="5dp"/>
 
                                 <RadioButton
                                     android:id="@+id/rbBad"
@@ -291,7 +291,7 @@
                         android:text="Pridėti filmą"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:background="@drawable/roundshapebtn"
+                        android:background="@drawable/roundshapebutn"
                         android:layout_marginBottom="20dp"/>
 
             </LinearLayout>

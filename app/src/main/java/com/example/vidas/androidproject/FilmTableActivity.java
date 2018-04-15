@@ -136,4 +136,11 @@ public class FilmTableActivity extends AppCompatActivity implements SearchView.O
         return true;
     }
 
+    @Override
+    public void onBackPressed(){
+        Intent goBack = new Intent(FilmTableActivity.this, LoginActivity.class);
+        goBack.putExtra("username", name);
+        startActivity(goBack);
+        FilmTableActivity.this.finish();
+    }
 }

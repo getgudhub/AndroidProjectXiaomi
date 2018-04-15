@@ -25,6 +25,7 @@ public class LoginActivity extends AppCompatActivity {
         final EditText etPassword = (EditText) findViewById(R.id.password);
         final CheckBox cbRememberMe = (CheckBox) findViewById(R.id.rememberMe);
 
+
         final User user = new User(LoginActivity.this);
 
         etUsername.setError(null);
@@ -45,6 +46,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent goToSearchActivity = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(goToSearchActivity);
+                LoginActivity.this.finish();
 
             }
         });
@@ -88,6 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                     Intent intent = new Intent(LoginActivity.this, FilmTableActivity.class);
                     intent.putExtra("username", etUsername.getText().toString());
                     startActivity(intent);
+                    LoginActivity.this.finish();
                 }
 
             }

@@ -10,8 +10,8 @@ public class Validation {
     private static final String VALID_ID_REGEX = "\\d{1,11}$";
     private static final String VALID_TIME_REGEX = "[0-9]{1,4}$";
     private static final String VALID_DATE_REGEX = "^((19|20)\\d\\d)-(0?[1-9]|1[012])-(0?[1-9]|[12][0-9]|3[01])$";
-    private static final String VALID_NAME_REGEX = "[A-Za-z0-9#/ ]{4,20}$";
-    private static final String VALID_FULL_NAME_REGEX= "[-A-za-z ]{3,20}$";
+    private static final String VALID_NAME_REGEX = "^[A-Za-z0-9#/ ]{4,20}$";
+    private static final String VALID_FULL_NAME_REGEX= "^[n.|A-Za-z, ]{1,40}$";
 
     public static boolean isValidCredentials(String credentials){
         Pattern credentialsPattern = Pattern.compile(VALID_CREDENTIALS_REGEX);

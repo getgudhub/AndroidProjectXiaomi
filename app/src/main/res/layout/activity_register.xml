@@ -87,6 +87,6 @@
         android:layout_height="wrap_content"
         android:text="Registruotis"
         android:layout_gravity="center"
-        android:background="@drawable/roundshapebtn"/>
+        android:background="@drawable/roundshapebutn"/>
 
 </LinearLayout>
